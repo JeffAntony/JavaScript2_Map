@@ -1,0 +1,100 @@
+
+
+import java.util.*;
+//import java.util.Entry;
+//public class Map_{
+//    public static void main(String args[]){
+//
+//        LinkedHashMap hm=new LinkedHashMap();
+//
+//        hm.put(100,"Amit");
+//        hm.put(101,"Vijay");
+//        hm.put(102,"Rahul");
+//
+//        for(Map.Entry m:hm.entrySet()){
+//            System.out.println(m.getKey()+" "+m.getValue());
+//        }
+//    }
+//}
+//// changing value of a key from the hashmap;
+// changing the value of KEY IN THE hashmap
+//removing a pair from hashmap
+// checking if a key in the hashmap
+// adding a new entry only if the new key does not exist
+// get all keys in the hashmap
+// getting values in the hashmap
+
+
+
+// problem related to frequency
+
+// public class Map_ {
+//     public static void main(String[] args) {
+//
+//         int a[]={7,10,1,4,2,5,1,4,4,6,4,4,4,3,7,8};
+//         Map <Integer ,Integer> hs =new HashMap<>();
+//
+//         for(int el: a)
+//         {
+//             if(!hs.containsKey(el))
+//             {
+//                 hs.put(el,1);
+//             }
+//             else {
+//                 hs.put(el,hs.get(el) +1);
+//             }
+//         }
+//         System.out.println(hs.entrySet());
+//     }
+//}
+
+//
+
+//public  class Map_ {
+//    public static void main(String[] args)
+//    {
+//        int a[]={1,4,2,5,1,4,4,6,4,4,4,};
+//         Map <Integer ,Integer> hs =new HashMap<>();
+//
+//         for(int el: a)
+//         {
+//             if(!hs.containsKey(el))
+//             {
+//                 hs.put(el,1);
+//             }
+//             else {
+//                 hs.put(el,hs.get(el) +1);
+//             }
+//         }
+//         System.out.println(hs.entrySet());
+//
+//         int maxFre =0;
+//         int anskey = -1;
+//
+//         for(var e : hs.entrySet())
+//         {
+//             maxFre= e.getKey();
+//             anskey= e.getKey();
+//         }
+//        System.out.printf("%d has a max frequency ",anskey);
+//    }
+//}
+
+
+import java.util.*;
+public class Map_ {
+    public static void main(String args[]) {
+        HashMap<Integer, String> map = new HashMap<Integer, String>();//Creating HashMap
+        map.put(10, "Grapes");
+        map.put(6, "Grapes");
+        map.put(1, "Mango");  //Put elements in Map
+        map.put(2, "Apple");
+        map.put(3, "Banana");
+        map.put(1, "Grapes"); //trying duplicate key
+        map.put(5, "Grapes");
+
+        System.out.println("Iterating Hashmap...");
+        System.out.println(map.entrySet());
+
+    }
+}
